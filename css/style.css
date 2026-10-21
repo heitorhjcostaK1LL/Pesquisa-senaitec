@@ -19,6 +19,7 @@ main {
 header{
     text-align: center;
     margin: 20px;
+    font-family: Unbounded;
 }
 
 form {
@@ -26,14 +27,14 @@ form {
     padding: 15px;
     border-radius: 20px;
     margin-bottom: 100px;
-
+    font-family: Unbounded;
 }
 fieldset {
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 10px;
     border: 1px solid #cccccc;
-
+    font-family: Unbounded;
 
 }
 
@@ -71,8 +72,3 @@ p {
     font-weight: bold;
 }
 
-fieldset {
-    padding: 5px;
-    margin: 15px;
-
-}
