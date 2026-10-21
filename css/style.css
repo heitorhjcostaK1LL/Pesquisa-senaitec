@@ -63,6 +63,7 @@ input[type="checkbox"] {
 input[type="color"] {
     width: 40px;
     padding: 0 5px;
+    border-radius: 20%;
 }
 
 p {
