@@ -18,6 +18,7 @@
         <form action="index.html" method="get">
 
             <fieldset>
+
                 <legend>Dados Pessoais</legend>
 
             <label for="userName">Nome:</label>
@@ -50,6 +51,108 @@
 
 
             </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero</p>
+            
+
+                <input type="radio" name="userGender" id="userGender1" value="masculino">
+                <label for="userGender1">Masculino</label>
+                <br>
+
+                <input type="radio" name="userGender" id="userGender2" value="feminino">
+                <label for="userGender2">Feminino</label>
+                <br>
+
+                <input type="radio" name="userGender" id="userGender3" value="outro">
+                <label for="userGender3">Prefiro não informar</label>
+                <br>
+
+                <label for="userMaritalStatus">Estado Civil</label>
+                <select name="userMaritalStatus" id="userMaritalStatus">
+                    <option value="solteiro">Solteiro(a)</option>
+                     <option value="casado">Casado(a)</option>
+                      <option value="viuvo">Viuvo(a)</option>
+                       <option value="uniaoEstavel">União Estavel(a)</option>
+                <br>
+
+                </select>
+                <br>
+                <label for="userState">Estado(UF)</label>
+                <select  name="userState" id="userState">
+                    <option value="">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas<option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraiba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                    </select>
+                    <br>
+                    <label for="userCity">Cidade:</label>
+                    <input type="text" name="userCity" id="userCity"
+                    placeholder="Fortaleza">
+                    
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais</p>
+
+                <label for="userSocial1">Instagram:</label>
+                <input type="checkbox" name="userSocial"
+                id="userSocial1" value="instagram">
+                <br>
+                <label for="userSocial2">Facebook:</label>
+                <input type="checkbox" name="userSocial"
+                id="userSocial2" value="facebook">
+                <br>
+                <label for="userSocial3">Linkedin:</label>
+                <input type="checkbox" name="userSocial"
+                id="userSocial3" value="linkedin">
+                <br>
+                
+                <!--estilo musical-->
+                <label for="userMusicStyle">Estilo Musical</label>
+                <input type="text" name="userMusicStyle" id="userMusicStyle" 
+                list="userMusicStyles">
+                <datalist id="userMusicStyles">
+                    <option value="Rock"></option>
+                    <option value="Pop"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="funk"></option>
+                    <option value="Pagode"></option>
+                    <option value="Forró"></option>
+                </datalist>
+                 <!--cor favorita-->
+                <label for="userFavoriteColor">Cor favorita:</label>
+                <input type="color" name="color" id="userFavoriteColor">
+
+            </fieldset>
+
 
             <button type="submit">Enviar</button>
 
