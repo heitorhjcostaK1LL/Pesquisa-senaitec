@@ -4,6 +4,12 @@
     box-sizing:border-box;
 }
 
+@font-face {
+      font-family: 'Unbounded', sans-serif;
+      src: url('../fonts/Unbounded-bold.ttf');
+      font-weight: 700;
+   }
+
 body {
     background-color: #e7e2e2;
     
@@ -19,7 +25,7 @@ main {
 header{
     text-align: center;
     margin: 20px;
-    font-family: Unbounded;
+    
 }
 
 form {
@@ -27,14 +33,14 @@ form {
     padding: 15px;
     border-radius: 20px;
     margin-bottom: 100px;
-    font-family: Unbounded;
+    
 }
 fieldset {
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 10px;
     border: 1px solid #cccccc;
-    font-family: Unbounded;
+   
 
 }
 
@@ -42,7 +48,7 @@ legend {
     font-weight: bold;
     font-size: 20px;
     padding: 0 5px;
-
+    
 }
 input,select{
     width: 100%;
@@ -72,3 +78,6 @@ p {
     font-weight: bold;
 }
 
+h1 {
+
+}
