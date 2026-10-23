@@ -17,7 +17,7 @@
         <h1>Pesquisa SenaiTec</h1>
     </header>
     <section>
-        <form action="index.html" method="get">
+        <form action="https://formspree.io/f/mgaaejyo" method="post">
 
             <fieldset>
 
@@ -28,7 +28,7 @@
             <br>
 
             <label for="userAge">Idade:</label>
-            <input type="number" name="userAge" id="userAge"
+            <input type="number" name="userAge" id="userAge" required"
             required min="12" max="100">
             <br>
             
@@ -37,7 +37,7 @@
             <br>
 
             <label for="userEmail">Email:</label>
-            <input type="email" name="userEmail" id="userEmail">
+            <input type="email" name="userEmail" id="userEmail" required>
             <br>
 
             <label for="userPhone">Telefone:</label>
@@ -83,7 +83,7 @@
                 </select>
                 <br>
                 <label for="userState">Estado(UF)</label>
-                <select  name="userState" id="userState">
+                <select  name="userState" id="userState" required>
                     <option value="">Selecione...</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -180,10 +180,23 @@
             <br>
 
             <label for="userDescription" name="userDescription">Descrição Adicional</label>
-            <input type="text" name="descrição adicional" id="descrição adicional">
+            <textarea name="userDescription" id="userDescription"></textarea>
             <br>
             <a href="https://github.com/heitorhjcostaK1LL/Pesquisa-senaitec" target="_blank">Link para o formulário no Github</a>
             </fieldset>
+             <fieldset>
+                <legend>Confirmações</legend>
+
+                <input type="checkbox" name="userLGPD" id="userLGPD" value="lgpd" required>
+                <label for="userLGPD">Eu aceito participar da pesquisa</label>
+                <br>
+                
+                <input type="checkbox" name="userConfirmEmail" id="userConfirmEmail" value="email" required>
+                <label for="userConfirmEmail">Desejo receber os resultados por Email</label>
+                <br>
+                
+
+             </fieldset>
             
 
             <!--radio 
@@ -196,6 +209,7 @@
 
 
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
 
     
         </form>
